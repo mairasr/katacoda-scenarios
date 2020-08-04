@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: command-demo
+  name: configmap-demo
   labels:
-    purpose: demonstrate-command
+    purpose: demonstrate-configmap
 spec:
   containers:
-  - name: command-demo-container
+  - name: configmap-demo
     image: debian
     command: ["/bin/echo"]
-    args: ["$(MESSAGE)"]
+    args: ["Oi $(MESSAGE)"]
     env:
      - name: MESSAGE
        valueFrom:
