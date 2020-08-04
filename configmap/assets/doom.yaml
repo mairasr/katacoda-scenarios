@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: doom-demo
+spec:
+  selector:
+    matchLabels:
+      app: doom-demo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: doom-demo
+    spec:
+      containers:
+      - name: doom-demo
+        image: luigitricoli/ngnix-doom-fire:0.2
+        volumeMounts:
+        - mountPath: /config/
+          name: config
+      volumes:
+      - name: config
+        configMap:
+          name: doom-config-map
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: doom-demo
+  labels:
+    app: doom-demo-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+    name: web
+  selector:
+    app: doom-demo
