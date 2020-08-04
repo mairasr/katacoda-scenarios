@@ -4,7 +4,7 @@
   "difficulty": "Beginner",
   "time": "1 hour",
   "details": {
-    "assets": { "host01": [ {"file": "files/application.properties", "target": "/usr/local/"}, {"file": "files/pod.yaml", "target": "/usr/local/"} ] },
+    "assets": { "host01": [ {"file": "application.properties", "target": "/usr/local/"}, {"file": "pod.yaml", "target": "/usr/local/"} ] },
     "steps": [
       {
         "title": "Step 1",
