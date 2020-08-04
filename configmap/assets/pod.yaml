@@ -12,8 +12,8 @@ spec:
     args: ["$(MESSAGE)"]
     env:
      - name: MESSAGE
-     valueFrom:
-       configMapKeyRef:
-         name: foursys-config
-         key: message
+       valueFrom:
+         configMapKeyRef:
+           name: foursys-config
+           key: message
   restartPolicy: OnFailure
