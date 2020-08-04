@@ -1,9 +1,9 @@
 
 ## Como criar um ConfigMap
 
-Nosso primeiro exercicio será criar um ConfigMap usando um Arquivo. 
+Nosso primeiro exercicio será criar um ConfigMap usando linha de comando. 
 
-`kubectl create configmap foursys-config --from-file=application.properties`{{execute}}
+`kubectl create configmap foursys-config --from-literal=message=TeamFoursys`{{execute}}
 
 Com o ConfigMap criado, você pode visualizar de duas maneiras:
 
