@@ -4,7 +4,7 @@
   "difficulty": "Beginner",
   "time": "1 hour",
   "details": {
-    "assets": { "host01": [ {"file": "*", "target": "/usr/local/"} ] },
+    "assets": { "host01": [ {"file": "*", "target": "/root/"} ] },
     "steps": [
       {
         "title": "Step 1",
