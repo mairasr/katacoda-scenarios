@@ -2,33 +2,37 @@
   "title": "ConfigMap",
   "description": "Externalizando Configurações de Aplicação",
   "difficulty": "Beginner",
-  "time": "1 hour",
+  "time": "15 minutos",
   "details": {
     "assets": { "host01": [ {"file": "*", "target": "/root/"} ] },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Como criar um ConfigMap",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Usando o ConfigMap",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Conferindo o resultado...",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Utilizando arquivos...",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Utilizando YAML...",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "ConfigMap como Arquivo",
         "text": "step6.md"
+      },
+      {
+        "title": "O Resultado",
+        "text": "step7.md"
       }
     ],
     "intro": {

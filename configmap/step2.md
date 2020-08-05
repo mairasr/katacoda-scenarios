@@ -1,6 +1,4 @@
 
-## Usando o ConfigMap
-
 Agora vamos utilizar o ConfigMap criado.
 
 No exemplo abaixo, estamos atribuindo o valor guardado no ConfigMap a uma variavel de ambiente do Pod.

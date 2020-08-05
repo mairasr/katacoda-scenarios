@@ -1,6 +1,4 @@
 
-## Como criar um ConfigMap
-
 Nosso primeiro exercicio será criar um ConfigMap usando linha de comando. 
 
 `kubectl create configmap foursys-config --from-literal=message=TeamFoursys`{{execute}}
