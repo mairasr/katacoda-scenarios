@@ -5,4 +5,4 @@ metadata:
 data:
   application.properties: |
     sentido = 2
-	fireInitIntensity = 36
+    fireInitIntensity = 36

@@ -1,46 +1,9 @@
 
 Agora vamos utilizar o ConfigMap criado.
 
-No exemplo abaixo, estamos atribuindo o valor guardado no ConfigMap a uma variavel de ambiente do Pod.
-
-`apiVersion: v1                   `
-
-`kind: Pod                        `
-
-`metadata:                        `
-
-`  name: command-demo             `
-
-`  labels:                        `
-
-`    purpose: demonstrate-command `
-
-`spec:                            `
-
-`  containers:                    `
-
-`  - name: command-demo-container `
-
-`    image: debian                `
-
-`    command: ["/bin/echo"]       `
-
-`    args: ["$(MESSAGE)"]         `
-
-`    env:                         `
-
-`     - name: MESSAGE             `
-
-`       valueFrom:                `
-
-`         configMapKeyRef:        `
-
-`           name: foursys-config  `
-
-`           key: message          `
-
-`   restartPolicy: OnFailure      `
-
+No exemplo, estamos atribuindo o valor guardado no ConfigMap a uma variavel de ambiente do Pod.
+Execute o comando abaixo para visualizar:
+`cat pod.yaml`{{execute}}
 
 Para executar este Pod, aplique o YAML:
 

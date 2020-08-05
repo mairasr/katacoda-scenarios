@@ -12,3 +12,11 @@ Agora vamos aplicar outro Yaml com os parametros de renderização da chama alte
 `kubectl apply -f doom-config2.yaml`{{execute}}
 
 Agora atualize a página, por favor...mudou?
+
+Vamos tentar outro?
+
+`cat doom-config3.yaml`{{execute}}
+
+`kubectl apply -f doom-config3.yaml`{{execute}}
+
+Agora atualize a página, por favor...mudou?

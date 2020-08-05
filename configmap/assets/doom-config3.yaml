@@ -4,5 +4,5 @@ metadata:
   name: doom-config
 data:
   application.properties: |
-    sentido=0
-    fireInitIntensity=5
+    sentido=1
+    fireInitIntensity=20
