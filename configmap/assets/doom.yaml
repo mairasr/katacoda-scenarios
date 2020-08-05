@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: doom-demo
-        image: luigitricoli/ngnix-doom-fire:0.2
+        image: luigitricoli/ngnix-doom-fire:0.9
         volumeMounts:
         - mountPath: /config/
           name: config
