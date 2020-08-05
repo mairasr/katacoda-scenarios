@@ -1,8 +1,8 @@
 {
-  "title": "ConfigMap",
-  "description": "Externalizando Configurações de Aplicação",
+  "title": "Externalizando Configurações com ConfigMap",
+  "description": "Externalizando Configurações com ConfigMap",
   "difficulty": "Beginner",
-  "time": "15 minutos",
+  "time": "20 minutos",
   "details": {
     "assets": { "host01": [ {"file": "*", "target": "/root/"} ] },
     "steps": [
