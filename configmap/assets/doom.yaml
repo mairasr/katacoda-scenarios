@@ -16,7 +16,7 @@ spec:
       - name: doom-demo
         image: luigitricoli/ngnix-doom-fire:0.9
         volumeMounts:
-        - mountPath: /config/
+        - mountPath: /usr/share/nginx/html/config/
           name: config
       volumes:
       - name: config
