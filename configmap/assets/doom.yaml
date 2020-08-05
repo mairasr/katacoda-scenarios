@@ -21,7 +21,7 @@ spec:
       volumes:
       - name: config
         configMap:
-          name: doom-config-map
+          name: doom-config
 ---
 apiVersion: v1
 kind: Service
