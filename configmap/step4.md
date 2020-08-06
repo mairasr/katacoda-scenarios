@@ -3,6 +3,8 @@ Outra forma de criar o ConfigMap é basear-se em um arquivo, como o properties q
 
 No próximo exemplo iremos usar o arquivo application.properties para criar o nosso ConfigMap
 
+`cat application.properties`{{execute}}
+
 `kubectl create configmap doom-config --from-file=application.properties`{{execute}}
 
 Use uma das opções abaixo para conferir o seu ConfigMap.
