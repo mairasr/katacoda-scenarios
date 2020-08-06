@@ -20,4 +20,4 @@ Para ver o resultado, precisamos que o EXTERNAL IP do serviço esteja preenchido
 
 `kubectl get services`{{execute}}
 
-Caso esteja <PENDING>, só aguardar e checar novamente com o mesmo comando até que apareça um IP, isso pode levar alguns minutos.
+Caso esteja PENDING, só aguardar e checar novamente com o mesmo comando até que apareça um IP, isso pode levar alguns minutos.
