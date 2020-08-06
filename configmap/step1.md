@@ -3,7 +3,7 @@ Nosso primeiro exercicio será criar um ConfigMap usando linha de comando.
 
 Como?
 
-KUBECTL - A ferramente de comando do kubernetes
+KUBECTL - A ferramenta de comandos do Kubernetes
 
 CREATE - A ação
 
@@ -16,9 +16,10 @@ foursys-config - O nome do objeto
 
 Clique no comando para copiar:
 
-`kubectl create configmap foursys-config --from-literal=message=SeuNomeAqui`{{copy}}
+`kubectl create configmap foursys-config --from-literal=message='Seu Nome Aqui'`{{copy}}
 
-Agora clique no terminal e pressione as teclas shift + insert, isso faz com que o comando seja colado no terminal. Agora apague o "SeuNomeAqui" e esqueva seu nome no lugar
+Agora clique no terminal e pressione as teclas shift + insert, isso fará o comando ser colado no terminal. 
+Agora apague o "SeuNomeAqui" e escreva seu nome no lugar
 
 Caso preferir, clique no comando abaixo para copiar e executar direto no terminal:
  
@@ -32,7 +33,8 @@ Ou em formato YAML
 
 `kubectl get configmaps foursys-config  -o yaml`{{execute}}
 
-Se quiser deletar e criar um novo, basta executar o comando abaixo e repetir os passos anteriores, lembrando que você pode acessar os comandos executados pressionando a tecla de seta para cima no terminal:
+Se quiser deletar e criar um novo, basta executar o comando abaixo e repetir os passos anteriores:
 
 `kubectl delete configmaps foursys-config`{{execute}}
 
+Lembrando que você pode acessar os comandos executados pressionando a tecla de seta para cima no terminal.

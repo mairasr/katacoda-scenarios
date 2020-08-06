@@ -1,23 +1,23 @@
 
-Agora vamos deletar esse ConfigMap e recria-lo com YAML para nosso próximo exemplo.
+Com o ConfigMap criado, vamos rodar nosso aplicação Doom que renderiza a intensidade e a direção da chama de acordo com o parametro do ConfigMap.
+Desta vez o ConfigMap será usado para montar o arquivo em um pasta acessível para a aplicação.
 
-`kubectl delete configmap doom-config`{{execute}}
+Execute o comando abaixo para visualizar o Yaml da aplicação:
 
-Vamos olhar a estrutura do YAML antes de aplica-lo?
+`cat doom.yaml`{{execute}}
 
-`cat doom-config.yaml`{{execute}}
+Aplicando o YAML:
 
-Criando o ConfigMap com YAML:
+`kubectl apply -f doom.yaml`{{execute}}
 
-`kubectl apply -f doom-config.yaml`{{execute}}
+Vamos checar se o Pod foi criado corretamente:
 
-Use uma das opções abaixo para conferir se o seu ConfigMap foi criado corretamente.
+`kubectl get pods`{{execute}}
 
-Describe:
+Com o Pod criado, vamos para o próximo passo...
 
-`kubectl describe configmaps doom-config`{{execute}}
+Para ver o resultado, precisamos que o EXTERNAL IP do serviço esteja preenchido, por isso execute o comando abaixo para rerificar:
 
-YAML:
+`kubectl get services`{{execute}}
 
-`kubectl get configmaps doom-config  -o yaml`{{execute}}
-
+Caso esteja <PENDING>, só aguardar e checar novamente com o mesmo comando até que apareça um IP, isso pode levar alguns minutos.

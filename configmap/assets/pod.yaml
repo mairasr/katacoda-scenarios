@@ -9,9 +9,9 @@ spec:
   - name: configmap-demo
     image: debian
     command: ["/bin/echo"]
-    args: ["Oi $(MESSAGE)"]
+    args: ["Oi $(NOME)! Obrigada por participar do Tech & Beer!"]
     env:
-     - name: MESSAGE
+     - name: NOME
        valueFrom:
          configMapKeyRef:
            name: foursys-config

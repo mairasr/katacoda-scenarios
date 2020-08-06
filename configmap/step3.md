@@ -1,10 +1,19 @@
 
-Com alguns comandos do Kubernetes podemos ver o resultado da nossa experiência.
 
-Com o comando abaixo podemos verificar que o nosso Pod foi criado com sucesso:
+Outra forma de criar o ConfigMap é basear-se em um arquivo, como o .properties que você provavelmente já utiliza.
 
-`kubectl get pods`{{execute}}
+Neste exemplo iremos usar o arquivo application.properties para criar o nosso ConfigMap
 
-E com este comando vemos o resultado no log:
+`cat application.properties`{{execute}}
 
-`kubectl logs configmap-demo`{{execute}}
+`kubectl create configmap doom-config --from-file=application.properties`{{execute}}
+
+Use uma das opções abaixo para conferir o seu ConfigMap.
+
+Describe:
+
+`kubectl describe configmaps doom-config`{{execute}}
+
+YAML:
+
+`kubectl get configmaps doom-config  -o yaml`{{execute}}

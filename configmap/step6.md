@@ -1,17 +1,13 @@
 
-Com o ConfigMap criado, vamos rodar nosso aplicação Doom que renderiza a intensidade e a direção da chama de acordo com o parametro do ConfigMap.
-Desta vez o ConfigMap será usado para montar o arquivo em um pasta acessível para a aplicação.
+No link abaixo você pode conferir o resultado:
 
-Execute o comando abaixo para visualizar o Yaml da aplicação:
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-`cat doom.yaml`{{execute}}
 
-Aplicando o YAML:
+Agora vamos aplicar outro Yaml com os parametros de renderização do fogo alterados.
 
-`kubectl apply -f doom.yaml`{{execute}}
+`cat doom-config2.yaml`{{execute}}
 
-Vamos checar se o Pod foi criado corretamente:
+`kubectl apply -f doom-config2.yaml`{{execute}}
 
-`kubectl get pods`{{execute}}
-
-Com o Pod criado, vamos para o próximo passo...
+Agora atualize a página, por favor...mudou?

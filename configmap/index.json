@@ -15,24 +15,20 @@
         "text": "step2.md"
       },
       {
-        "title": "Conferindo o resultado...",
+        "title": "Utilizando arquivos...",
         "text": "step3.md"
       },
       {
-        "title": "Utilizando arquivos...",
+        "title": "Utilizando YAML...",
         "text": "step4.md"
       },
       {
-        "title": "Utilizando YAML...",
+        "title": "ConfigMap como Arquivo",
         "text": "step5.md"
       },
       {
-        "title": "ConfigMap como Arquivo",
-        "text": "step6.md"
-      },
-      {
         "title": "O Resultado",
-        "text": "step7.md"
+        "text": "step6.md"
       }
     ],
     "intro": {

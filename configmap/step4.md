@@ -1,13 +1,23 @@
 
-Outra forma de criar o ConfigMap é basear-se em um arquivo, como o properties que você provavelmente já utiliza.
+Agora vamos deletar esse ConfigMap e recria-lo com YAML para nosso próximo exemplo.
 
-No próximo exemplo iremos usar o arquivo application.properties para criar o nosso ConfigMap
+`kubectl delete configmap doom-config`{{execute}}
 
-`cat application.properties`{{execute}}
+Vamos olhar a estrutura do YAML antes de aplica-lo?
 
-`kubectl create configmap doom-config --from-file=application.properties`{{execute}}
+`cat doom-config.yaml`{{execute}}
 
-Use uma das opções abaixo para conferir o seu ConfigMap.
+Lembrando que os valores esperado para configurar o fogo do Doom são: 
+
+Sentido: 0 - Crescente para a esquerda, 1 - Centralizado, 2 - Crescente para a direita.
+
+Intensidade: de 0 a 36.
+
+Criando o ConfigMap com YAML:
+
+`kubectl apply -f doom-config.yaml`{{execute}}
+
+Use uma das opções abaixo para conferir se o seu ConfigMap foi criado corretamente.
 
 Describe:
 
@@ -16,3 +26,4 @@ Describe:
 YAML:
 
 `kubectl get configmaps doom-config  -o yaml`{{execute}}
+
